@@ -1,0 +1,222 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E4DEBE;
+    font-size: 4vw;
+    /* Menggunakan vw untuk ukuran font responsif */
+    color: #333;
+    overflow: hidden;
+    /* Mencegah scroll */
+}
+
+h1 {
+    font-family: 'Lilita One';
+    user-select: none;
+    color: #BF3131;
+    font-size: 6.5vw;
+    /* Menggunakan vw untuk ukuran font responsif */
+    margin-bottom: 6.4em;
+    font-weight: normal;
+    z-index: 1;
+    /* Mengurangi jarak bawah agar lebih responsif */
+}
+
+h4 {
+    margin-bottom: 25.3em;
+    user-select: none;
+    margin-left: 3vw;
+    /* Menggunakan vw untuk margin responsif */
+    max-width: 33vw;
+    font-size: 1.2vw;
+    /* Menggunakan vw untuk ukuran font responsif */
+    position: absolute;
+    /* Mengubah posisi menjadi relatif agar tetap responsif */
+    font-family: 'Louis George Café', sans-serif;
+    font-weight: bolder;
+    color: #BF3131;
+}
+
+.lets {
+    color: #BF3131;
+}
+
+.talk {
+    color: #EAD196;
+    -webkit-text-stroke: 0.04em #BF3131;
+    /* Menggunakan properti ini untuk menambahkan stroke */
+}
+
+.title-line {
+    background: #BF3131;
+    width: 3vw;
+    /* Menggunakan vw untuk ukuran lebar responsif */
+    height: 2em;
+    /* Menggunakan vh untuk ukuran tinggi responsif */
+    margin-bottom: 8.5em;
+    /* Menggunakan vh untuk margin bawah responsif */
+    margin-right: 37vw;
+    /* Menggunakan vw untuk margin kanan responsif */
+    position: absolute;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+label,
+button {
+    position: absolute;
+    margin: 1em;
+}
+
+#imagePreview {
+    margin-top: -2em;
+    position: absolute;
+    background-color: #7D0A0A;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 100%;
+    box-shadow: 0 0.1em 0 0 #7D0A0A;
+    border: 0.05em solid #7D0A0A;
+}
+
+#message {
+    position: absolute;
+    margin-top: 10em;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    margin-top: 2.3em;
+    margin-left: 6.5em;
+    display: flex;
+    justify-content: center;
+    background-color: #EAD196;
+    color: #BF3131;
+    border: 0.1em solid #7D0A0A;
+    padding: 0.6em;
+    transition: all 0.5s ease;
+    border-radius: 100%;
+    z-index: 1;
+    user-select: none;
+    font-size: 0.45em;
+}
+
+label:hover {
+    margin-top: 2.3em;
+    margin-left: 6.5em;
+    transition: all 0.5s ease;
+    color: #EAD196;
+    background-color: #BF3131;
+}
+
+button {
+    margin-top: 15em;
+    background-color: #EAD196;
+    color: #BF3131;
+    border: 0.1em solid #7D0A0A;
+    font-family: 'Lilita One';
+    box-shadow: 0em 0.1em 0em 0em #7D0A0A;
+    border-radius: 1em;
+    width: 4em;
+    height: 1.5em;
+    padding: 0em 1em;
+    font-size: 0.6em;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover {
+    width: 4em;
+    height: 1.5em;
+    transition: all 0.5s ease;
+    color: #EAD196;
+    background-color: #BF3131;
+    transform: translateY(-0.33em);
+}
+
+button:active {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
+
+input[type=text] {
+    margin-top: 14em;
+    position: absolute;
+    outline: none;
+    width: 18em;
+    line-height: 2.3em;
+    font-size: 0.3em;
+    background-color: #EAD196;
+    color: #7D0A0A;
+    border-radius: 3em;
+    font-family: 'Louis George Café', sans-serif;
+    border: 0.1em solid #7D0A0A;
+    box-shadow: 0em 0.25em 0em 0em #7D0A0A;
+    font-weight: bold;
+    padding: 0.1em 1.5em;
+    text-align: center;
+}
+
+::placeholder {
+    color: rgba(191, 49, 49, 0.49);
+}
+
+.warning {
+    position: absolute;
+    margin-top: 22em;
+    text-align: justify;
+    width: 24em;
+    color: #BF3131;
+    font-family: "Louis George Cafe";
+    font-size: 0.26em;
+    display: flex;
+    justify-content: center;
+}
+
+img.background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 180vw;
+    max-height: 180vh;
+    z-index: 0;
+    animation: bgAnimate 8s linear infinite;
+}
+
+@keyframes bgAnimate {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: rotateX(50%);
+    }
+}

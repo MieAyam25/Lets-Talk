@@ -1,0 +1,198 @@
+* {
+    font-family: 'Louis George Café', sans-serif;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Atur lebar halaman menjadi 1440px */
+    margin: 0 auto;
+    /* Pusatkan halaman di tengah */
+    overflow: hidden;
+    background-color: #47463C;
+}
+
+.container {
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #E4DEBE;
+    max-width: 700px;
+}
+
+nav {
+    background-color: #BF3131;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chat-container {
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Tambahkan margin-bottom di sini */
+    height: calc(100vh - 160px);
+    /* Sesuaikan tinggi container dengan margin-bottom */
+    overflow-y: scroll;
+}
+
+
+.chat-form {
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    color: #BF3131;
+    background-color: #BF3131;
+
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.chat-form input[type="text"] {
+    outline: none;
+    flex: 1;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    color: #BF3131;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 10px;
+    background-color: #EAD196;
+}
+
+/* Contoh pengaturan margin pada placeholder */
+
+.chat-form button {
+    padding: 10px 10px;
+    background-color: #EAD196;
+    color: #BF3131;
+    border: none;
+    font-size: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-right: 20px;
+
+}
+
+::placeholder {
+    color: #BF3131;
+    opacity: 70%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+#pfp{
+    box-shadow: 0 1px 0 0 #EAD196;
+    background-color: #EAD196   ;
+    border: 2.5px solid #EAD196;
+    width: 35px;
+    height: 35px;
+}
+#username{
+    font-size: 20px;
+    color: #EAD196;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding-left: 10px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+button:hover {
+    color: #EAD196;
+    background-color: #BF3131;
+    transition: all 0.5s ease;
+
+}
+
+
+
+.chat-container::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+/* Custom styles for scrollbar */
+.chat-container.scroll-hide-scrollbar::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+.chat-container.scroll-hide-scrollbar::-webkit-scrollbar-track {
+    background: #083358;
+}
+
+.chat-container.scroll-hide-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(60deg, #1EDA8B 6.44%, #2EA6DA 89.35%);
+    border-radius: 10px;
+    border: 0.25em solid #083358;
+}
+
+/* Additional style to hide scrollbar by default */
+.chat-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Lilita One';
+    user-select: none;
+    color: #EAD196;
+    font-weight: normal;
+    margin-left: 10px;
+    /* Menambahkan margin agar terpisah dari tombol back */
+}
+
+.back:hover {
+    color: #BF3131;
+    background-color: #EAD196;
+}
+
+.back {
+    font-family: 'Lilita One';
+    text-decoration: none;
+    color: #EAD196;
+    margin-left: 10px;
+    padding: 1px;
+    border: 5px solid #EAD196;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Agar ikon back berada di tengah-tengah */
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    /* Menambahkan properti height untuk membuat lingkaran */
+}
+
+.lets {
+    color: #EAD196;
+    font-family: 'Lilita One';
+}
+
+.talk {
+    color: #BF3131;
+    font-family: 'Lilita One';
+    -webkit-text-stroke: 1px #EAD196;
+    /* Menggunakan properti ini untuk menambahkan stroke */
+}
